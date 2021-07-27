@@ -14107,3 +14107,302 @@ Processing by ArticlesController#show as HTML
 Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 0.3ms | Allocations: 5633)
 
 
+Started GET "/" for 127.0.0.1 at 2021-07-27 12:45:21 +0530
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 225)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 358)
+  Rendered layouts/_messages.html.erb (Duration: 0.4ms | Allocations: 190)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 30.4ms | Allocations: 8630)
+Completed 200 OK in 40ms (Views: 32.4ms | ActiveRecord: 0.0ms | Allocations: 11344)
+
+
+Started GET "/articles" for 127.0.0.1 at 2021-07-27 12:45:45 +0530
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 49.2ms | Allocations: 8049)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.4ms | Allocations: 129)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 49)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 63.4ms | Allocations: 12083)
+Completed 200 OK in 79ms (Views: 65.1ms | ActiveRecord: 4.3ms | Allocations: 14300)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2021-07-27 12:45:51 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:47:in `set_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 560)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.4ms | Allocations: 129)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 49)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 4602)
+Completed 200 OK in 69ms (Views: 10.0ms | ActiveRecord: 0.2ms | Allocations: 8241)
+
+
+Started GET "/articles/1/edit" for 127.0.0.1 at 2021-07-27 12:45:55 +0530
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:47:in `set_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 0.9ms | Allocations: 195)
+  Rendered articles/_form.html.erb (Duration: 7.7ms | Allocations: 2060)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 8.6ms | Allocations: 2369)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 127)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 6438)
+Completed 200 OK in 26ms (Views: 21.3ms | ActiveRecord: 0.2ms | Allocations: 7828)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-27 12:46:12 +0530
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.6ms | Allocations: 142)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 49)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 4120)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 4503)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-27 13:10:51 +0530
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 225)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.7ms | Allocations: 356)
+  Rendered layouts/_messages.html.erb (Duration: 0.4ms | Allocations: 190)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 74.7ms | Allocations: 11316)
+Completed 200 OK in 85ms (Views: 78.1ms | ActiveRecord: 0.0ms | Allocations: 14082)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2021-07-27 13:10:59 +0530
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 1.7ms | Allocations: 195)
+  Rendered articles/_form.html.erb (Duration: 17.5ms | Allocations: 3125)
+  Rendered articles/new.html.erb within layouts/application (Duration: 18.3ms | Allocations: 3434)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.6ms | Allocations: 127)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 36.1ms | Allocations: 7462)
+Completed 200 OK in 77ms (Views: 39.6ms | ActiveRecord: 1.2ms | Allocations: 12813)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-27 13:11:08 +0530
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 142)
+  Rendered layouts/_messages.html.erb (Duration: 0.2ms | Allocations: 49)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 4172)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.0ms | Allocations: 4555)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-27 13:13:00 +0530
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 225)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.7ms | Allocations: 312)
+  Rendered layouts/_messages.html.erb (Duration: 0.4ms | Allocations: 190)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 109)
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 8584)
+Completed 200 OK in 44ms (Views: 35.7ms | ActiveRecord: 0.0ms | Allocations: 11282)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-27 13:13:29 +0530
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 111)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 3.2ms | Allocations: 330)
+  Rendered layouts/_messages.html.erb (Duration: 0.4ms | Allocations: 182)
+  Rendered layouts/_footer.html.erb (Duration: 1.5ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 5187)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.0ms | Allocations: 6270)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-27 13:13:32 +0530
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 142)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered layouts/_footer.html.erb (Duration: 1.8ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 4124)
+Completed 200 OK in 25ms (Views: 20.8ms | ActiveRecord: 0.0ms | Allocations: 4507)
+
+
+Started GET "/" for ::1 at 2021-07-27 13:15:38 +0530
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 2.2ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.3ms | Allocations: 135)
+  Rendered layouts/_messages.html.erb (Duration: 0.1ms | Allocations: 49)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 4153)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms | Allocations: 4481)
+
+
+Started GET "/" for ::1 at 2021-07-27 13:17:47 +0530
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.6ms | Allocations: 322)
+  Rendered layouts/_messages.html.erb (Duration: 0.5ms | Allocations: 182)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 5190)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 6275)
+
+
+Started GET "/articles" for ::1 at 2021-07-27 13:17:58 +0530
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:9
+  Rendered articles/index.html.erb within layouts/application (Duration: 57.9ms | Allocations: 14734)
+  Rendered layout layouts/application.html.erb (Duration: 58.3ms | Allocations: 14798)
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 2.3ms | Allocations: 16988)
+
+
+  
+ActionView::Template::Error (undefined method `user_name' for #<User:0x000055a663fcdb90>
+Did you mean?  username
+               username?
+               username=):
+     6:       <div class="col-8 mt-4">
+     7:         <div class="card text-center shadow mb-5 bg-body rounded">
+     8:           <div class="card-header fst-italic">
+     9:             by <%= article.user.user_name if article.user %>
+    10:           </div>
+    11:           <div class="card-body">
+    12:             <h5 class="card-title"><%= link_to article.title, article_path(article), class:"text-success"%></h5>
+  
+app/views/articles/index.html.erb:9
+app/views/articles/index.html.erb:4
+Started GET "/articles" for ::1 at 2021-07-27 13:18:16 +0530
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:9
+  Rendered articles/index.html.erb within layouts/application (Duration: 33.3ms | Allocations: 15403)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.7ms | Allocations: 313)
+  Rendered layouts/_messages.html.erb (Duration: 0.5ms | Allocations: 186)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 43.9ms | Allocations: 20651)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.4ms | Allocations: 21870)
+
+
+Started GET "/articles" for ::1 at 2021-07-27 13:18:32 +0530
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:9
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:9
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/index.html.erb:9
+  Rendered articles/index.html.erb within layouts/application (Duration: 37.9ms | Allocations: 14113)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 0.6ms | Allocations: 313)
+  Rendered layouts/_messages.html.erb (Duration: 0.3ms | Allocations: 182)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 47.7ms | Allocations: 19226)
+Completed 200 OK in 53ms (Views: 49.6ms | ActiveRecord: 0.7ms | Allocations: 20327)
+
+
+Started GET "/articles/1" for ::1 at 2021-07-27 13:19:17 +0530
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (1.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:47:in `set_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/articles/show.html.erb:8
+  Rendered articles/show.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1758)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navigation.html.erb (Duration: 1.0ms | Allocations: 313)
+  Rendered layouts/_messages.html.erb (Duration: 0.4ms | Allocations: 182)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 6818)
+Completed 200 OK in 31ms (Views: 22.9ms | ActiveRecord: 1.4ms | Allocations: 8910)
+
+
